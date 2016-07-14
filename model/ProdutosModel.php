@@ -11,7 +11,7 @@ class ProdutosModel {
   * Autor : Daniel Lima <daniel.lima.nascimento@gmail.com>
   */
   private function abrirConexao() {
-    $this->conn = new mysqli("localhost", "root", "cotangentelima123", "teste_ph2");
+    $this->conn = new mysqli("localhost", "root", "senha", "teste_ph2");
     if ($this->conn->connect_errno) {
       throw new Exception("Falha ao conectar com o BD! Motivo: ". $conn->connect_errno);
     }
