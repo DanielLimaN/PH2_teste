@@ -34,7 +34,7 @@ class ProdutosController {
             } else {
                 $this->showError("Pagina não encontrada", "A pagina que executa esta ação não foi encontrada!");
             }
-        } catch ( Exception $e )
+        } catch ( Exception $e ) {
 						if (count($e->getErrors())) {
 							$this->salvarProduto(0, $e->getErrors());
 						}
